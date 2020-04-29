@@ -23,7 +23,7 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-maven-plugin</artifactId>
     <configuration>
-        <mainClass>com.sample.docker.Application</mainClass>
+        <mainClass>Applicationcom.sample.jar.springboot.Application</mainClass>
     </configuration>
 </plugin>
 ```
@@ -71,7 +71,7 @@ ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.sample.docker.Application"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","Application"]
 ```
 
 - 生成镜像

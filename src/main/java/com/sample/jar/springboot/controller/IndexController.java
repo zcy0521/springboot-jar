@@ -1,4 +1,4 @@
-package com.sample.docker.controller;
+package com.sample.jar.springboot.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
