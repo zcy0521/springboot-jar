@@ -12,7 +12,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("context", "SpringBoot Docker!");
+        model.addAttribute("context", "SpringBoot JAR!");
         return "index";
     }
 
