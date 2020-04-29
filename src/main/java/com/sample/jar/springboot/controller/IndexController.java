@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model) throws Exception {
         model.addAttribute("context", "SpringBoot JAR!");
         return "index";
     }
